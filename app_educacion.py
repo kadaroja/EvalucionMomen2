@@ -7,7 +7,7 @@ uploaded_file = st.file_uploader("Cargar archivo 'educacion.csv'", type=["csv"])
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
 else:
-    df = pd.read_csv("static\datasets\educacion.csv")
+    df = pd.read_csv("static/datasets/educacion.csv")
 
 st.title("Análisis de Datos de Educación en Colombia")
 st.dataframe(df)
